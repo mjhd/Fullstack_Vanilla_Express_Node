@@ -26,6 +26,7 @@ app.get('/', function (req, res) {
   })*/
 })
 
+eval(fs.readFileSync("app_resources.js", {encoding: "utf8", flag: 'r'}))
 eval(fs.readFileSync("endpoint_api_data.js", {encoding: "utf8", flag: 'r'}))
 eval(fs.readFileSync("endpoint_db_data.js", {encoding: "utf8", flag: 'r'}))
 eval(fs.readFileSync("endpoint_static_data.js", {encoding: "utf8", flag: 'r'}))

@@ -41,8 +41,6 @@ app.get('/static_data', function (req, res) {
     res.end(document.head + document.styles + document.body + DOM_data + script_include + document.tail)
   })
 
-
-
   /*let options = {
     root: path.join(__dirname)
   }*/
@@ -50,7 +48,3 @@ app.get('/static_data', function (req, res) {
   //res.sendFile("/home/runner/APIExpressNode/data.json")
 })
 
-app.get('/graph_static.js', function (req, res) {
-  res = app.set_options(res)
-  res.sendFile("/home/runner/FullstackVanillaExpressNode/assets/graph_static.js")
-})
